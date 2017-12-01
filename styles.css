@@ -1,0 +1,43 @@
+.logowanieNapis {
+  font-family: Arial;
+  color: blue;
+  background-color: LightGrey;
+}
+
+.h2aplikacja {
+  font-family: Arial;
+  color: purple;
+  background-color: LightGrey;
+}
+
+.tabelaAplikacja {
+  /*
+  border-color: Blue;
+  CELLPADDING=5;
+  BORDER=1;
+  */
+  border: 2px solid LightGrey;
+  border-collapse: collapse;
+}
+
+.naglowekTabela{
+  font-family: Verdana bold;
+  color: navy;
+  background-color: Grey;
+}
+
+.h3Pracownik_pytania{
+  font-family: Arial;
+  color: blue;
+  background-color: LightGrey;
+}
+textarea {
+    resize: none;
+}
+
+
+.nick {
+  font-family: Arial;
+  color: black;
+  background-color: LightGrey;
+}
