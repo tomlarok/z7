@@ -85,16 +85,16 @@
                 $num_rows = mysqli_num_rows($slc);
                 if ($num_rows < 1){  // czy login jest w tabeli logi? czy jest to pierwsze logowanie?
                   $ins = mysqli_query ($polaczenie, "INSERT INTO $db_name.logi (data_godzina, login, proby) VALUES (NOW(), '$user', '0') ");
-                  if($ins) echo "Rekord został dodany poprawnie. Log dodany.  ";
-                      else echo "Błąd, nie udało się dodać nowego rekordu  ";
+                //  if($ins) echo "Rekord został dodany poprawnie. Log dodany.  ";
+                //      else echo "Błąd, nie udało się dodać nowego rekordu  ";
                     /*
                         if($ins) echo "Rejestracja zakończona poprawnie ";
                             else echo "Błąd rejestrcji ";
                             */
                   } else {
                     $upd = mysqli_query ($polaczenie, "UPDATE $db_name.logi SET data_godzina = NOW(), proby = 0 WHERE login = '$user' ");
-                    if($upd) echo "Rekord został zmieniony poprawnie. Log daty aktualizowany ";
-                            else echo "Błąd, nie udało się dodać nowego rekordu. Log daty  ";
+                  //  if($upd) echo "Rekord został zmieniony poprawnie. Log daty aktualizowany ";
+                    //        else echo "Błąd, nie udało się dodać nowego rekordu. Log daty  ";
                   }
 
 
